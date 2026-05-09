@@ -1,19 +1,19 @@
 {
   "version": 1,
   "appName": "Cellardoor",
-  "generatedAt": "2026-05-09T15:48:42.841Z",
+  "generatedAt": "2026-05-09T21:06:32.184Z",
   "date": "2026-05-09",
   "source": {
     "type": "openai_x_curated_daily_compiler",
     "model": "gpt-5.4-mini",
     "candidateFile": "output/candidates-2026-05-09.json",
-    "candidateGeneratedAt": "2026-05-09T13:29:58.316Z",
+    "candidateGeneratedAt": "2026-05-09T21:06:32.117Z",
     "inputCandidates": 30,
     "note": "Briefing items are AI-generated from curated public X candidates. Source post text is not included in this briefing file; links point back to X."
   },
   "orientation": {
-    "greeting": "Good afternoon.",
-    "summary": "A calm pass through today’s AI conversation: product updates around agents, voice, and coding; a robotics talk worth a closer look; and a few useful background threads on benchmarks, security, and open-source tooling."
+    "greeting": "Good evening.",
+    "summary": "A small set of product, research, and tooling signals stood out today, with a few useful demos and some background conversation around naming, benchmarks, and robotics."
   },
   "sections": [
     {
@@ -24,37 +24,67 @@
         {
           "id": "wk-1",
           "category": "product",
-          "title": "OpenAI keeps pushing agents toward broader computer use and richer interaction.",
-          "summary": "OpenAI leaders pointed to Codex as a general tool for computer work, not just code, while also highlighting newer voice capabilities and browser control in the background. The thread points to a product direction where models are expected to handle more of the surrounding interface, not only text output.",
-          "whyItMatters": "OpenAI leaders pointed to Codex as a general tool for computer work, not just code, while also highlighting newer voice capabilities and browser control in the background. The thread points to a product direction where models are expected to handle more of the surrounding interface, not only text output.",
+          "title": "OpenAI keeps pushing Codex toward broader computer use",
+          "summary": "OpenAI leaders framed Codex as a tool for work across the computer, not only software writing, alongside examples like background browser control and completed task runs. The thread around next-model improvements and realtime audio translation points to a product direction focused on practical agentic utility.",
+          "whyItMatters": "It suggests the company is still widening the scope of its assistants from chat into execution, interface control, and everyday workflows.",
           "source": {
-            "label": "OpenAI product direction posts",
+            "label": "OpenAI product direction",
             "type": "conversationCluster"
           },
           "detailVariants": {
             "concise": {
-              "summary": "OpenAI is framing agents as tools for broader computer work, with voice and browser control moving alongside coding.",
-              "whyItMatters": "That suggests the product surface is widening beyond plain chat into more task-complete workflows."
+              "summary": "OpenAI leaders kept pointing Codex toward broader computer work, browser control, and realtime speech features.",
+              "whyItMatters": "It shows the assistant layer moving toward execution, not just conversation."
             },
             "standard": {
-              "summary": "OpenAI leaders pointed to Codex as a general tool for computer work, not just code, while also highlighting newer voice capabilities and browser control in the background. The thread points to a product direction where models are expected to handle more of the surrounding interface, not only text output.",
-              "whyItMatters": "OpenAI leaders pointed to Codex as a general tool for computer work, not just code, while also highlighting newer voice capabilities and browser control in the background. The thread points to a product direction where models are expected to handle more of the surrounding interface, not only text output."
+              "summary": "OpenAI leaders framed Codex as a tool for work across the computer, not only software writing, alongside examples like background browser control and completed task runs. The thread around next-model improvements and realtime audio translation points to a product direction focused on practical agentic utility.",
+              "whyItMatters": "It suggests the company is still widening the scope of its assistants from chat into execution, interface control, and everyday workflows."
             },
             "detailed": {
-              "summary": "OpenAI leaders pointed to Codex as a general tool for computer work, not just code, while also highlighting newer voice capabilities and browser control in the background. Taken together, the posts suggest an emphasis on agents that can operate across apps, handle longer voice interactions, and complete more of the task around the model rather than inside a simple text box.",
-              "whyItMatters": "OpenAI leaders pointed to Codex as a general tool for computer work, not just code, while also highlighting newer voice capabilities and browser control in the background. Taken together, the posts suggest an emphasis on agents that can operate across apps, handle longer voice interactions, and complete more of the task around the model rather than inside a simple text box."
+              "summary": "Several OpenAI posts this week point in the same direction: Codex is being described as a general computer-use tool, with examples that include background Chrome tab control and task completion while a person is away. Separate notes about realtime voice translation and asking users what they want improved in the next model reinforce a product posture centered on capability expansion and everyday usefulness rather than a single narrow feature.",
+              "whyItMatters": "It suggests the company is still widening the scope of its assistants from chat into execution, interface control, and everyday workflows."
             }
           },
           "keywords": [
             "openai",
+            "codex",
             "agents",
-            "voice",
-            "coding",
+            "product",
             "browser",
-            "product"
+            "voice",
+            "realtime",
+            "workflow"
           ],
           "readTimeMinutes": 2,
           "sourcePosts": [
+            {
+              "id": "2053191344999604409",
+              "url": "https://x.com/sama/status/2053191344999604409",
+              "createdAt": "2026-05-09T19:12:17.000Z",
+              "authorUsername": "sama",
+              "authorName": "Sam Altman"
+            },
+            {
+              "id": "2053151542916894775",
+              "url": "https://x.com/sama/status/2053151542916894775",
+              "createdAt": "2026-05-09T16:34:08.000Z",
+              "authorUsername": "sama",
+              "authorName": "Sam Altman"
+            },
+            {
+              "id": "2053134883040514350",
+              "url": "https://x.com/gdb/status/2053134883040514350",
+              "createdAt": "2026-05-09T15:27:56.000Z",
+              "authorUsername": "gdb",
+              "authorName": "Greg Brockman"
+            },
+            {
+              "id": "2052525058325647693",
+              "url": "https://x.com/gdb/status/2052525058325647693",
+              "createdAt": "2026-05-07T23:04:42.000Z",
+              "authorUsername": "gdb",
+              "authorName": "Greg Brockman"
+            },
             {
               "id": "2052805767791829259",
               "url": "https://x.com/gdb/status/2052805767791829259",
@@ -68,101 +98,148 @@
               "createdAt": "2026-05-07T20:09:37.000Z",
               "authorUsername": "gdb",
               "authorName": "Greg Brockman"
-            },
-            {
-              "id": "2052462271667028211",
-              "url": "https://x.com/sama/status/2052462271667028211",
-              "createdAt": "2026-05-07T18:55:13.000Z",
-              "authorUsername": "sama",
-              "authorName": "Sam Altman"
-            },
-            {
-              "id": "2052448850796011931",
-              "url": "https://x.com/gdb/status/2052448850796011931",
-              "createdAt": "2026-05-07T18:01:53.000Z",
-              "authorUsername": "gdb",
-              "authorName": "Greg Brockman"
             }
           ],
-          "isInitiallySaved": false
+          "isInitiallySaved": true
         },
         {
           "id": "wk-2",
-          "category": "demo",
-          "title": "A robotics talk frames physical AGI as a parallel problem, not a single breakthrough.",
-          "summary": "Jim Fan shared a recorded talk on robotics and physical AGI, presented as a sequel to last year’s Physical Turing Test discussion. The framing is less about one robot demo and more about a roadmap for making embodied systems improve in parallel, similar to how language models scaled.",
-          "whyItMatters": "Jim Fan shared a recorded talk on robotics and physical AGI, presented as a sequel to last year’s Physical Turing Test discussion. The framing is less about one robot demo and more about a roadmap for making embodied systems improve in parallel, similar to how language models scaled.",
+          "category": "modelRelease",
+          "title": "OpenAI is also signaling a stronger security posture",
+          "summary": "OpenAI described GPT-5.5-Cyber as a limited preview for defenders working on critical infrastructure, and Sam Altman said the company wants to help organizations secure themselves quickly. That places security use cases more visibly inside the model roadmap.",
+          "whyItMatters": "It is a sign that frontier model vendors are treating defensive security as a first-class product lane, not just an adjacent experiment.",
           "source": {
-            "label": "Robotics: Endgame talk",
-            "type": "demoClips"
-          },
-          "detailVariants": {
-            "concise": {
-              "summary": "A robotics talk frames physical AGI as a roadmap problem, not a single demo.",
-              "whyItMatters": "It gives a concrete way to think about embodied AI progress beyond isolated robot stunts."
-            },
-            "standard": {
-              "summary": "Jim Fan shared a recorded talk on robotics and physical AGI, presented as a sequel to last year’s Physical Turing Test discussion. The framing is less about one robot demo and more about a roadmap for making embodied systems improve in parallel, similar to how language models scaled.",
-              "whyItMatters": "Jim Fan shared a recorded talk on robotics and physical AGI, presented as a sequel to last year’s Physical Turing Test discussion. The framing is less about one robot demo and more about a roadmap for making embodied systems improve in parallel, similar to how language models scaled."
-            },
-            "detailed": {
-              "summary": "Jim Fan shared a recorded talk on robotics and physical AGI, presented as a sequel to last year’s Physical Turing Test discussion. The talk appears to frame embodied intelligence as a systems and scaling problem, with the emphasis on a roadmap rather than a single impressive robot result.",
-              "whyItMatters": "Jim Fan shared a recorded talk on robotics and physical AGI, presented as a sequel to last year’s Physical Turing Test discussion. The talk appears to frame embodied intelligence as a systems and scaling problem, with the emphasis on a roadmap rather than a single impressive robot result."
-            }
-          },
-          "keywords": [
-            "robotics",
-            "embodied ai",
-            "physical agi",
-            "video",
-            "research",
-            "simulation"
-          ],
-          "readTimeMinutes": 3,
-          "sourcePosts": [
-            {
-              "id": "2052758642781487237",
-              "url": "https://x.com/DrJimFan/status/2052758642781487237",
-              "createdAt": "2026-05-08T14:32:53.000Z",
-              "authorUsername": "DrJimFan",
-              "authorName": "Jim Fan"
-            }
-          ],
-          "isInitiallySaved": false
-        },
-        {
-          "id": "wk-3",
-          "category": "infrastructure",
-          "title": "Open-source platforms are still being used as a place to seed datasets, tools, and bots.",
-          "summary": "Hugging Face surfaced new UFO data on the platform, while another post highlighted a GitHub bot contributing to Bun more often than a human maintainer. Both point to a steady shift in AI infrastructure: more of the work now lives in public datasets, public repos, and automated helpers.",
-          "whyItMatters": "Hugging Face surfaced new UFO data on the platform, while another post highlighted a GitHub bot contributing to Bun more often than a human maintainer. Both point to a steady shift in AI infrastructure: more of the work now lives in public datasets, public repos, and automated helpers.",
-          "source": {
-            "label": "Platform and tooling posts",
+            "label": "OpenAI security preview",
             "type": "conversationCluster"
           },
           "detailVariants": {
             "concise": {
-              "summary": "Open-source platforms are still where datasets and bots get seeded.",
-              "whyItMatters": "That keeps public infrastructure central to how new AI work gets built and shared."
+              "summary": "OpenAI signaled a limited security preview for defenders and a faster push into organizational protection.",
+              "whyItMatters": "It makes defensive security look more like a product lane than a side project."
             },
             "standard": {
-              "summary": "Hugging Face surfaced new UFO data on the platform, while another post highlighted a GitHub bot contributing to Bun more often than a human maintainer. Both point to a steady shift in AI infrastructure: more of the work now lives in public datasets, public repos, and automated helpers.",
-              "whyItMatters": "Hugging Face surfaced new UFO data on the platform, while another post highlighted a GitHub bot contributing to Bun more often than a human maintainer. Both point to a steady shift in AI infrastructure: more of the work now lives in public datasets, public repos, and automated helpers."
+              "summary": "OpenAI described GPT-5.5-Cyber as a limited preview for defenders working on critical infrastructure, and Sam Altman said the company wants to help organizations secure themselves quickly. That places security use cases more visibly inside the model roadmap.",
+              "whyItMatters": "It is a sign that frontier model vendors are treating defensive security as a first-class product lane, not just an adjacent experiment."
             },
             "detailed": {
-              "summary": "Hugging Face surfaced new UFO data on the platform, while another post highlighted a GitHub bot contributing to Bun more often than a human maintainer. The shared theme is that AI infrastructure is increasingly public and operational: datasets are being published for model building, and software projects are absorbing more automated contribution loops.",
-              "whyItMatters": "Hugging Face surfaced new UFO data on the platform, while another post highlighted a GitHub bot contributing to Bun more often than a human maintainer. The shared theme is that AI infrastructure is increasingly public and operational: datasets are being published for model building, and software projects are absorbing more automated contribution loops."
+              "summary": "The security-related posts point to a clearer product boundary around defense: GPT-5.5-Cyber was described as a limited preview for defenders protecting critical infrastructure, and the company leadership framed this as work they want to start quickly for organizations that need help securing themselves. Taken together, it reads like an early but deliberate move to position frontier models inside a real security workflow.",
+              "whyItMatters": "It is a sign that frontier model vendors are treating defensive security as a first-class product lane, not just an adjacent experiment."
+            }
+          },
+          "keywords": [
+            "security",
+            "openai",
+            "critical infrastructure",
+            "defenders",
+            "model releases",
+            "cyber",
+            "infrastructure"
+          ],
+          "readTimeMinutes": 2,
+          "sourcePosts": [
+            {
+              "id": "2052583338561683775",
+              "url": "https://x.com/gdb/status/2052583338561683775",
+              "createdAt": "2026-05-08T02:56:17.000Z",
+              "authorUsername": "gdb",
+              "authorName": "Greg Brockman"
+            },
+            {
+              "id": "2052558319940944256",
+              "url": "https://x.com/sama/status/2052558319940944256",
+              "createdAt": "2026-05-08T01:16:52.000Z",
+              "authorUsername": "sama",
+              "authorName": "Sam Altman"
+            }
+          ],
+          "isInitiallySaved": true
+        },
+        {
+          "id": "wk-3",
+          "category": "product",
+          "title": "Gemini, AlphaGo, and DeepMind continue to lean on games and public demos",
+          "summary": "Demis Hassabis marked 10 years since AlphaGo and also highlighted a new research partnership around Eve Online, keeping games in view as a proving ground for AI. The post ties historical milestones to current applied research in a familiar DeepMind style.",
+          "whyItMatters": "Games still serve as a legible place to see agent behavior, strategy, and research identity before those ideas move into broader systems.",
+          "source": {
+            "label": "DeepMind games and history",
+            "type": "conversationCluster"
+          },
+          "detailVariants": {
+            "concise": {
+              "summary": "DeepMind highlighted AlphaGo’s anniversary and a new game partnership as part of its ongoing research story.",
+              "whyItMatters": "Games remain one of the clearest places to watch strategy and agent behavior."
+            },
+            "standard": {
+              "summary": "Demis Hassabis marked 10 years since AlphaGo and also highlighted a new research partnership around Eve Online, keeping games in view as a proving ground for AI. The post ties historical milestones to current applied research in a familiar DeepMind style.",
+              "whyItMatters": "Games still serve as a legible place to see agent behavior, strategy, and research identity before those ideas move into broader systems."
+            },
+            "detailed": {
+              "summary": "Demis Hassabis used the AlphaGo anniversary to reflect on how that work changed the way people think about Go, then paired it with a new research partnership around Eve Online. The combination is less about nostalgia than continuity: games remain one of the most understandable places to study planning, adaptation, and AI systems that operate over time.",
+              "whyItMatters": "Games still serve as a legible place to see agent behavior, strategy, and research identity before those ideas move into broader systems."
+            }
+          },
+          "keywords": [
+            "deepmind",
+            "games",
+            "alphago",
+            "research",
+            "agents",
+            "strategy",
+            "partnership"
+          ],
+          "readTimeMinutes": 2,
+          "sourcePosts": [
+            {
+              "id": "2053182256366191078",
+              "url": "https://x.com/demishassabis/status/2053182256366191078",
+              "createdAt": "2026-05-09T18:36:10.000Z",
+              "authorUsername": "demishassabis",
+              "authorName": "Demis Hassabis"
+            },
+            {
+              "id": "2052147236952477923",
+              "url": "https://x.com/demishassabis/status/2052147236952477923",
+              "createdAt": "2026-05-06T22:03:22.000Z",
+              "authorUsername": "demishassabis",
+              "authorName": "Demis Hassabis"
+            }
+          ],
+          "isInitiallySaved": true
+        },
+        {
+          "id": "wk-4",
+          "category": "industrySignal",
+          "title": "Hugging Face and others are still widening the open data and model surface",
+          "summary": "Hugging Face posts pointed to fresh datasets and reading material, while Simon Willison noted a new vulnerability-related example and compared an apparent Gemini release change. The broader pattern is a steady expansion of public model, data, and developer surface area.",
+          "whyItMatters": "For builders, the useful signal is less one headline launch than the continuing accumulation of reusable public infrastructure and examples.",
+          "source": {
+            "label": "Open ecosystem and tooling",
+            "type": "conversationCluster"
+          },
+          "detailVariants": {
+            "concise": {
+              "summary": "Hugging Face and related builders highlighted new public data, reading, and tooling examples.",
+              "whyItMatters": "The public AI stack keeps getting denser and easier to reuse."
+            },
+            "standard": {
+              "summary": "Hugging Face posts pointed to fresh datasets and reading material, while Simon Willison noted a new vulnerability-related example and compared an apparent Gemini release change. The broader pattern is a steady expansion of public model, data, and developer surface area.",
+              "whyItMatters": "For builders, the useful signal is less one headline launch than the continuing accumulation of reusable public infrastructure and examples."
+            },
+            "detailed": {
+              "summary": "A few posts on the open ecosystem side were more about the shape of the stack than any single release. Hugging Face drew attention to new data and reading, while Simon Willison pointed to a useful HTML-based explanation pattern for a vulnerability example and observed what looks like a small Gemini naming or release-change wrinkle. Together they suggest a maturing public layer where models, data, and interfaces are increasingly part of everyday developer practice.",
+              "whyItMatters": "For builders, the useful signal is less one headline launch than the continuing accumulation of reusable public infrastructure and examples."
             }
           },
           "keywords": [
             "open source",
+            "hugging face",
             "datasets",
-            "github",
-            "automation",
             "infrastructure",
-            "tools"
+            "developer tools",
+            "security",
+            "models"
           ],
-          "readTimeMinutes": 2,
+          "readTimeMinutes": 3,
           "sourcePosts": [
             {
               "id": "2052888717279334600",
@@ -172,58 +249,28 @@
               "authorName": "clem 🤗"
             },
             {
-              "id": "2052133374018699373",
-              "url": "https://x.com/simonw/status/2052133374018699373",
-              "createdAt": "2026-05-06T21:08:17.000Z",
+              "id": "2052770228908568664",
+              "url": "https://x.com/ClementDelangue/status/2052770228908568664",
+              "createdAt": "2026-05-08T15:18:55.000Z",
+              "authorUsername": "ClementDelangue",
+              "authorName": "clem 🤗"
+            },
+            {
+              "id": "2052864605853278715",
+              "url": "https://x.com/simonw/status/2052864605853278715",
+              "createdAt": "2026-05-08T21:33:57.000Z",
+              "authorUsername": "simonw",
+              "authorName": "Simon Willison"
+            },
+            {
+              "id": "2052471470325121260",
+              "url": "https://x.com/simonw/status/2052471470325121260",
+              "createdAt": "2026-05-07T19:31:46.000Z",
               "authorUsername": "simonw",
               "authorName": "Simon Willison"
             }
           ],
-          "isInitiallySaved": false
-        },
-        {
-          "id": "wk-4",
-          "category": "product",
-          "title": "Google DeepMind is pairing games with research again.",
-          "summary": "Demis Hassabis announced a research partnership around Eve Online, framing games as a proving ground for AI. It reads as another example of labs using rich simulated environments to study coordination, planning, and long-horizon behavior.",
-          "whyItMatters": "Demis Hassabis announced a research partnership around Eve Online, framing games as a proving ground for AI. It reads as another example of labs using rich simulated environments to study coordination, planning, and long-horizon behavior.",
-          "source": {
-            "label": "DeepMind and Eve Online partnership",
-            "type": "builderPosts"
-          },
-          "detailVariants": {
-            "concise": {
-              "summary": "DeepMind is using games again as a testbed for AI research.",
-              "whyItMatters": "Games remain one of the cleaner places to study planning and coordination at scale."
-            },
-            "standard": {
-              "summary": "Demis Hassabis announced a research partnership around Eve Online, framing games as a proving ground for AI. It reads as another example of labs using rich simulated environments to study coordination, planning, and long-horizon behavior.",
-              "whyItMatters": "Demis Hassabis announced a research partnership around Eve Online, framing games as a proving ground for AI. It reads as another example of labs using rich simulated environments to study coordination, planning, and long-horizon behavior."
-            },
-            "detailed": {
-              "summary": "Demis Hassabis announced a research partnership around Eve Online, framing games as a proving ground for AI. The post fits a familiar DeepMind pattern: using complex, simulated environments to study planning, coordination, and agent behavior where the rules are visible and the feedback loop is clear.",
-              "whyItMatters": "Demis Hassabis announced a research partnership around Eve Online, framing games as a proving ground for AI. The post fits a familiar DeepMind pattern: using complex, simulated environments to study planning, coordination, and agent behavior where the rules are visible and the feedback loop is clear."
-            }
-          },
-          "keywords": [
-            "deepmind",
-            "games",
-            "research",
-            "simulation",
-            "agents",
-            "partnership"
-          ],
-          "readTimeMinutes": 2,
-          "sourcePosts": [
-            {
-              "id": "2052147236952477923",
-              "url": "https://x.com/demishassabis/status/2052147236952477923",
-              "createdAt": "2026-05-06T22:03:22.000Z",
-              "authorUsername": "demishassabis",
-              "authorName": "Demis Hassabis"
-            }
-          ],
-          "isInitiallySaved": false
+          "isInitiallySaved": true
         }
       ]
     },
@@ -233,10 +280,10 @@
       "subtitle": "Longer thread with technical context.",
       "items": [
         {
-          "id": "reading-context-2052758642781487237-2052422157310083493-2052485051812909530",
+          "id": "reading-context-2052758642781487237-2052422157310083493-2053182256366191078",
           "category": "research",
           "title": "A longer thread adds useful technical context",
-          "summary": "Jim Fan, Andrew Ng, and Sam Altman shared source material that is better treated as slower technical context than as a headline. Save it for when you want the surrounding details behind today's signal.",
+          "summary": "Jim Fan, Andrew Ng, and Demis Hassabis shared source material that is better treated as slower technical context than as a headline. Save it for when you want the surrounding details behind today's signal.",
           "whyItMatters": "Longer source threads and linked material are where the implementation tradeoffs usually show up. They help separate product framing from the underlying technical shape.",
           "source": {
             "label": "Research and builder posts on X",
@@ -244,15 +291,15 @@
           },
           "detailVariants": {
             "concise": {
-              "summary": "Jim Fan, Andrew Ng, and Sam Altman shared source material that is better treated as slower technical context than as a headline.",
+              "summary": "Jim Fan, Andrew Ng, and Demis Hassabis shared source material that is better treated as slower technical context than as a headline.",
               "whyItMatters": "Longer source threads and linked material are where the implementation tradeoffs usually show up."
             },
             "standard": {
-              "summary": "Jim Fan, Andrew Ng, and Sam Altman shared source material that is better treated as slower technical context than as a headline. Save it for when you want the surrounding details behind today's signal.",
+              "summary": "Jim Fan, Andrew Ng, and Demis Hassabis shared source material that is better treated as slower technical context than as a headline. Save it for when you want the surrounding details behind today's signal.",
               "whyItMatters": "Longer source threads and linked material are where the implementation tradeoffs usually show up. They help separate product framing from the underlying technical shape."
             },
             "detailed": {
-              "summary": "Jim Fan, Andrew Ng, and Sam Altman shared source material that is better treated as slower technical context than as a headline. Save it for when you want the surrounding details behind today's signal. The useful read is to place this alongside the surrounding source posts, rather than treating it as a standalone headline.",
+              "summary": "Jim Fan, Andrew Ng, and Demis Hassabis shared source material that is better treated as slower technical context than as a headline. Save it for when you want the surrounding details behind today's signal. The useful read is to place this alongside the surrounding source posts, rather than treating it as a standalone headline.",
               "whyItMatters": "Longer source threads and linked material are where the implementation tradeoffs usually show up. They help separate product framing from the underlying technical shape. This is most useful when it clarifies direction, incentives, or product behavior."
             }
           },
@@ -279,11 +326,11 @@
               "authorName": "Andrew Ng"
             },
             {
-              "id": "2052485051812909530",
-              "url": "https://x.com/sama/status/2052485051812909530",
-              "createdAt": "2026-05-07T20:25:44.000Z",
-              "authorUsername": "sama",
-              "authorName": "Sam Altman"
+              "id": "2053182256366191078",
+              "url": "https://x.com/demishassabis/status/2053182256366191078",
+              "createdAt": "2026-05-09T18:36:10.000Z",
+              "authorUsername": "demishassabis",
+              "authorName": "Demis Hassabis"
             }
           ],
           "isInitiallySaved": false
@@ -296,10 +343,10 @@
       "subtitle": "Demos and visual posts that show the work in motion.",
       "items": [
         {
-          "id": "watching-demo-2052758642781487237-2052422157310083493-2052485051812909530",
+          "id": "watching-demo-2052758642781487237-2052422157310083493-2053182256366191078",
           "category": "demo",
           "title": "A video-backed demo is worth a brief look",
-          "summary": "Jim Fan, Andrew Ng, and Sam Altman shared a video-backed demo that gives the claim a more inspectable shape. It is worth a quick look because the interface says more than another abstract claim.",
+          "summary": "Jim Fan, Andrew Ng, and Demis Hassabis shared a video-backed demo that gives the claim a more inspectable shape. It is worth a quick look because the interface says more than another abstract claim.",
           "whyItMatters": "Visual evidence helps test whether a product idea has a real interaction pattern. Look for what the demo makes easier, not just what it promises.",
           "source": {
             "label": "Visual posts on X",
@@ -307,15 +354,15 @@
           },
           "detailVariants": {
             "concise": {
-              "summary": "Jim Fan, Andrew Ng, and Sam Altman shared a video-backed demo that gives the claim a more inspectable shape.",
+              "summary": "Jim Fan, Andrew Ng, and Demis Hassabis shared a video-backed demo that gives the claim a more inspectable shape.",
               "whyItMatters": "Visual evidence helps test whether a product idea has a real interaction pattern."
             },
             "standard": {
-              "summary": "Jim Fan, Andrew Ng, and Sam Altman shared a video-backed demo that gives the claim a more inspectable shape. It is worth a quick look because the interface says more than another abstract claim.",
+              "summary": "Jim Fan, Andrew Ng, and Demis Hassabis shared a video-backed demo that gives the claim a more inspectable shape. It is worth a quick look because the interface says more than another abstract claim.",
               "whyItMatters": "Visual evidence helps test whether a product idea has a real interaction pattern. Look for what the demo makes easier, not just what it promises."
             },
             "detailed": {
-              "summary": "Jim Fan, Andrew Ng, and Sam Altman shared a video-backed demo that gives the claim a more inspectable shape. It is worth a quick look because the interface says more than another abstract claim. The useful read is to place this alongside the surrounding source posts, rather than treating it as a standalone headline.",
+              "summary": "Jim Fan, Andrew Ng, and Demis Hassabis shared a video-backed demo that gives the claim a more inspectable shape. It is worth a quick look because the interface says more than another abstract claim. The useful read is to place this alongside the surrounding source posts, rather than treating it as a standalone headline.",
               "whyItMatters": "Visual evidence helps test whether a product idea has a real interaction pattern. Look for what the demo makes easier, not just what it promises. This is most useful when it clarifies direction, incentives, or product behavior."
             }
           },
@@ -342,11 +389,11 @@
               "authorName": "Andrew Ng"
             },
             {
-              "id": "2052485051812909530",
-              "url": "https://x.com/sama/status/2052485051812909530",
-              "createdAt": "2026-05-07T20:25:44.000Z",
-              "authorUsername": "sama",
-              "authorName": "Sam Altman"
+              "id": "2053182256366191078",
+              "url": "https://x.com/demishassabis/status/2053182256366191078",
+              "createdAt": "2026-05-09T18:36:10.000Z",
+              "authorUsername": "demishassabis",
+              "authorName": "Demis Hassabis"
             }
           ],
           "isInitiallySaved": false
@@ -362,25 +409,25 @@
       {
         "id": "d-1",
         "category": "discourse",
-        "title": "Robotics progress is still harder to benchmark than language models.",
-        "summary": "A discussion thread noted that robotics does not have the same clean benchmark culture as AI systems, which makes it harder to interpret eye-catching videos of robots doing tasks. The underlying point is a sober one: progress is visible, but it is still less standardized than text-model evaluation.",
-        "whyItMatters": "A discussion thread noted that robotics does not have the same clean benchmark culture as AI systems, which makes it harder to interpret eye-catching videos of robots doing tasks. The underlying point is a sober one: progress is visible, but it is still less standardized than text-model evaluation.",
+        "title": "Robotics is still hard to benchmark cleanly",
+        "summary": "One thread noted that robotics progress is much harder to measure than model progress, even when there are plenty of polished demo videos. That leaves a gap between what looks impressive and what can be compared reliably over time.",
+        "whyItMatters": "It is a useful reminder that robotics needs sturdier evaluation habits before the field can be read with the same confidence as text-model progress.",
         "source": {
-          "label": "Robotics benchmark discussion",
+          "label": "Robotics benchmarking discussion",
           "type": "discourseCluster"
         },
         "detailVariants": {
           "concise": {
-            "summary": "Robotics still lacks the clean benchmark culture that language models have.",
-            "whyItMatters": "That makes robot demos harder to compare and easier to overread."
+            "summary": "Robotics progress is still harder to benchmark cleanly than model progress.",
+            "whyItMatters": "Pretty demos are not yet the same as durable measurement."
           },
           "standard": {
-            "summary": "A discussion thread noted that robotics does not have the same clean benchmark culture as AI systems, which makes it harder to interpret eye-catching videos of robots doing tasks. The underlying point is a sober one: progress is visible, but it is still less standardized than text-model evaluation.",
-            "whyItMatters": "A discussion thread noted that robotics does not have the same clean benchmark culture as AI systems, which makes it harder to interpret eye-catching videos of robots doing tasks. The underlying point is a sober one: progress is visible, but it is still less standardized than text-model evaluation."
+            "summary": "One thread noted that robotics progress is much harder to measure than model progress, even when there are plenty of polished demo videos. That leaves a gap between what looks impressive and what can be compared reliably over time.",
+            "whyItMatters": "It is a useful reminder that robotics needs sturdier evaluation habits before the field can be read with the same confidence as text-model progress."
           },
           "detailed": {
-            "summary": "A discussion thread noted that robotics does not have the same clean benchmark culture as AI systems, which makes it harder to interpret eye-catching videos of robots doing tasks. The underlying point is a sober one: progress is visible, but it is still less standardized than text-model evaluation, so each demo needs more context before it can be read as a general capability jump.",
-            "whyItMatters": "A discussion thread noted that robotics does not have the same clean benchmark culture as AI systems, which makes it harder to interpret eye-catching videos of robots doing tasks. The underlying point is a sober one: progress is visible, but it is still less standardized than text-model evaluation, so each demo needs more context before it can be read as a general capability jump."
+            "summary": "A small but useful line of conversation focused on the measurement problem in robotics: there are many compelling videos, but fewer agreed ways to judge progress with the same clarity that benchmarks provide for language models. The point is not skepticism for its own sake; it is that robotics still needs better shared tests if we want to separate genuine capability gains from polished presentation.",
+            "whyItMatters": "It is a useful reminder that robotics needs sturdier evaluation habits before the field can be read with the same confidence as text-model progress."
           }
         },
         "keywords": [
@@ -405,32 +452,32 @@
       {
         "id": "d-2",
         "category": "discourse",
-        "title": "There is still active debate around naming, framing, and claims.",
-        "summary": "A few posts veer into light meta commentary on confusing model names and ambitious framing from major labs. The useful part is not the snark itself, but the reminder that AI communication can be more opaque than the underlying product changes.",
-        "whyItMatters": "A few posts veer into light meta commentary on confusing model names and ambitious framing from major labs. The useful part is not the snark itself, but the reminder that AI communication can be more opaque than the underlying product changes.",
+        "title": "Naming remains one of the recurring complaints around new models",
+        "summary": "There was also a smaller meta-thread about model names being difficult to follow. It is not a technical issue, but it does shape how people remember and compare releases.",
+        "whyItMatters": "Naming friction can make good releases harder to track, especially when product lines move quickly.",
         "source": {
-          "label": "Naming and framing chatter",
+          "label": "Naming and release chatter",
           "type": "discourseCluster"
         },
         "detailVariants": {
           "concise": {
-            "summary": "Naming and framing are still muddy around some AI releases.",
-            "whyItMatters": "That can make otherwise real product changes harder to track."
+            "summary": "A small meta-thread complained about model naming being hard to follow.",
+            "whyItMatters": "Naming friction makes it harder to keep releases straight."
           },
           "standard": {
-            "summary": "A few posts veer into light meta commentary on confusing model names and ambitious framing from major labs. The useful part is not the snark itself, but the reminder that AI communication can be more opaque than the underlying product changes.",
-            "whyItMatters": "A few posts veer into light meta commentary on confusing model names and ambitious framing from major labs. The useful part is not the snark itself, but the reminder that AI communication can be more opaque than the underlying product changes."
+            "summary": "There was also a smaller meta-thread about model names being difficult to follow. It is not a technical issue, but it does shape how people remember and compare releases.",
+            "whyItMatters": "Naming friction can make good releases harder to track, especially when product lines move quickly."
           },
           "detailed": {
-            "summary": "A few posts veer into light meta commentary on confusing model names and ambitious framing from major labs. The useful part is not the snark itself, but the reminder that AI communication can be more opaque than the underlying product changes, so it helps to separate naming noise from the actual capabilities being shipped.",
-            "whyItMatters": "A few posts veer into light meta commentary on confusing model names and ambitious framing from major labs. The useful part is not the snark itself, but the reminder that AI communication can be more opaque than the underlying product changes, so it helps to separate naming noise from the actual capabilities being shipped."
+            "summary": "One of the lighter conversation threads was simply about naming: the feeling that recent model labels are increasingly hard to parse. That may sound cosmetic, but in practice naming is part of product comprehension, and confusing labels can make it harder for users to understand what changed from one release to the next.",
+            "whyItMatters": "Naming friction can make good releases harder to track, especially when product lines move quickly."
           }
         },
         "keywords": [
           "naming",
-          "framing",
+          "models",
           "product",
-          "labs",
+          "release",
           "discourse"
         ],
         "readTimeMinutes": 1,
@@ -449,6 +496,6 @@
   },
   "completion": {
     "title": "That's the shape of it.",
-    "subtitle": "A small, steady set of signals for the day."
+    "subtitle": "A calm pass over a busy feed."
   }
 }
