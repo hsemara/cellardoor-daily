@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "appName": "Cellardoor",
+  "generatedAt": "2026-05-09T03:44:16.995Z",
+  "date": "2026-05-08",
+  "source": {
+    "type": "openai_x_curated_daily_compiler",
+    "model": "gpt-5.4-mini",
+    "candidateFile": "output/candidates-2026-05-08.json",
+    "candidateGeneratedAt": "2026-05-09T03:20:28.875Z",
+    "inputCandidates": 5,
+    "note": "Briefing items are AI-generated from curated public X candidates. Source post text is not included in this briefing file; links point back to X."
+  },
+  "orientation": {
+    "greeting": "Good morning.",
+    "summary": "A small set of product and research signals stood out today: voice in the API is moving forward, OpenAI is talking more explicitly about security work for companies, and DeepMind is pairing with a major game studio as a research setting."
+  },
+  "sections": [
+    {
+      "id": "worth-knowing",
+      "title": "Worth Knowing",
+      "subtitle": "Key signals from today's AI conversation on X.",
+      "items": [
+        {
+          "id": "wk-1",
+          "category": "product",
+          "title": "Voice interaction is moving further into the API",
+          "summary": "OpenAI says people are increasingly using voice to interact with AI, especially when they have a lot of context to share. GPT-Realtime-2 is now available in the API, with more voice improvements for chat still in progress.",
+          "whyItMatters": "Voice is becoming a more practical interface for high-context work, especially when people want to speak rather than type. An API release here can quickly shape what developers build next.",
+          "source": {
+            "label": "OpenAI leadership posts",
+            "type": "conversationCluster"
+          },
+          "detailVariants": {
+            "concise": {
+              "summary": "OpenAI says voice use is growing, and GPT-Realtime-2 is now in the API.",
+              "whyItMatters": "Voice is becoming a more practical interface for high-context work, especially when people want to speak rather than type."
+            },
+            "standard": {
+              "summary": "OpenAI says people are increasingly using voice to interact with AI, especially when they have a lot of context to share. GPT-Realtime-2 is now available in the API, with more voice improvements for chat still in progress.",
+              "whyItMatters": "Voice is becoming a more practical interface for high-context work, especially when people want to speak rather than type. An API release here can quickly shape what developers build next."
+            },
+            "detailed": {
+              "summary": "OpenAI says voice interaction is seeing real use, particularly in situations where users have a lot to say at once. GPT-Realtime-2 is now available through the API, and the team says it is still working on improvements to voice inside chat as well.",
+              "whyItMatters": "Voice can lower friction for long, context-heavy interactions and may change how developers design assistants and workflows. When that capability moves into the API, it tends to spread quickly into products built on top of it."
+            }
+          },
+          "keywords": [
+            "voice",
+            "api",
+            "product",
+            "realtime",
+            "developers"
+          ],
+          "readTimeMinutes": 2,
+          "sourcePosts": [
+            {
+              "id": "2052462271667028211",
+              "url": "https://x.com/sama/status/2052462271667028211",
+              "createdAt": "2026-05-07T18:55:13.000Z",
+              "authorUsername": "sama",
+              "authorName": "Sam Altman"
+            }
+          ],
+          "isInitiallySaved": false
+        },
+        {
+          "id": "wk-2",
+          "category": "product",
+          "title": "OpenAI is framing AI as a tool for stronger developers, not replacements",
+          "summary": "OpenAI's leadership is emphasizing a future where AI helps software developers become dramatically more capable rather than simply replacing them. The framing is less about substitution and more about leverage, especially for people already doing technical work.",
+          "whyItMatters": "This kind of positioning often points to how a lab expects its tools to be adopted in practice. It also hints at the kinds of workflows the company wants to accelerate first.",
+          "source": {
+            "label": "OpenAI leadership posts",
+            "type": "conversationCluster"
+          },
+          "detailVariants": {
+            "concise": {
+              "summary": "OpenAI is emphasizing AI as a way to amplify developers rather than replace them.",
+              "whyItMatters": "This kind of positioning often points to how a lab expects its tools to be adopted in practice."
+            },
+            "standard": {
+              "summary": "OpenAI's leadership is emphasizing a future where AI helps software developers become dramatically more capable rather than simply replacing them. The framing is less about substitution and more about leverage, especially for people already doing technical work.",
+              "whyItMatters": "This kind of positioning often points to how a lab expects its tools to be adopted in practice. It also hints at the kinds of workflows the company wants to accelerate first."
+            },
+            "detailed": {
+              "summary": "OpenAI's leadership is again framing AI as something that can make good software developers far more effective, rather than as a straight replacement for them. The emphasis is on augmentation, with the idea that one strong person can now do much more with the help of AI tools.",
+              "whyItMatters": "Positioning like this usually reflects where a product team sees the clearest near-term value. It also suggests that developer workflows remain a central place for capability gains to show up first."
+            }
+          },
+          "keywords": [
+            "developers",
+            "product",
+            "coding agents",
+            "workflow",
+            "openai"
+          ],
+          "readTimeMinutes": 2,
+          "sourcePosts": [
+            {
+              "id": "2052485051812909530",
+              "url": "https://x.com/sama/status/2052485051812909530",
+              "createdAt": "2026-05-07T20:25:44.000Z",
+              "authorUsername": "sama",
+              "authorName": "Sam Altman"
+            }
+          ],
+          "isInitiallySaved": false
+        },
+        {
+          "id": "wk-3",
+          "category": "infrastructure",
+          "title": "OpenAI says it wants to help companies secure themselves",
+          "summary": "OpenAI leadership says the company wants to help businesses secure themselves and believes that work should begin quickly. The post reads like an early signal that security may become a more explicit part of the company’s platform or services story.",
+          "whyItMatters": "Security is a natural next layer for companies deploying AI more deeply. If OpenAI builds here, it could influence how organizations think about guardrails, access, and operational hardening.",
+          "source": {
+            "label": "OpenAI leadership posts",
+            "type": "conversationCluster"
+          },
+          "detailVariants": {
+            "concise": {
+              "summary": "OpenAI says it wants to help companies secure themselves and move quickly on that work.",
+              "whyItMatters": "Security is a natural next layer for companies deploying AI more deeply."
+            },
+            "standard": {
+              "summary": "OpenAI leadership says the company wants to help businesses secure themselves and believes that work should begin quickly. The post reads like an early signal that security may become a more explicit part of the company’s platform or services story.",
+              "whyItMatters": "Security is a natural next layer for companies deploying AI more deeply. If OpenAI builds here, it could influence how organizations think about guardrails, access, and operational hardening."
+            },
+            "detailed": {
+              "summary": "OpenAI leadership says the company wants to help companies secure themselves and that the work should start quickly. While the post is brief, it points toward a possible security-oriented extension of the product and platform story, aimed at organizations deploying AI in real environments.",
+              "whyItMatters": "As AI tools move into everyday business systems, security becomes part of the basic infrastructure around them. Any move here from a major provider could shape expectations for access control, monitoring, and deployment hygiene."
+            }
+          },
+          "keywords": [
+            "security",
+            "infrastructure",
+            "enterprise",
+            "platform",
+            "openai"
+          ],
+          "readTimeMinutes": 2,
+          "sourcePosts": [
+            {
+              "id": "2052558319940944256",
+              "url": "https://x.com/sama/status/2052558319940944256",
+              "createdAt": "2026-05-08T01:16:52.000Z",
+              "authorUsername": "sama",
+              "authorName": "Sam Altman"
+            }
+          ],
+          "isInitiallySaved": false
+        },
+        {
+          "id": "wk-4",
+          "category": "research",
+          "title": "DeepMind is treating a major game world as a research partner",
+          "summary": "DeepMind announced a research partnership with a major game studio and described games as a useful proving ground in its AI history. The collaboration appears to be aimed at research in a complex live environment rather than a consumer product release.",
+          "whyItMatters": "Games offer structured but messy environments for testing planning, coordination, and long-horizon behavior. Partnerships like this can surface capabilities that are hard to see in standard benchmarks.",
+          "source": {
+            "label": "DeepMind leadership post",
+            "type": "conversationCluster"
+          },
+          "detailVariants": {
+            "concise": {
+              "summary": "DeepMind announced a research partnership with a major game studio and is treating games as a proving ground for AI.",
+              "whyItMatters": "Games offer structured but messy environments for testing planning, coordination, and long-horizon behavior."
+            },
+            "standard": {
+              "summary": "DeepMind announced a research partnership with a major game studio and described games as a useful proving ground in its AI history. The collaboration appears to be aimed at research in a complex live environment rather than a consumer product release.",
+              "whyItMatters": "Games offer structured but messy environments for testing planning, coordination, and long-horizon behavior. Partnerships like this can surface capabilities that are hard to see in standard benchmarks."
+            },
+            "detailed": {
+              "summary": "DeepMind says games have long mattered in its history because they provide a demanding setting for AI work, and it has now announced a research partnership with a major online game studio. The post points to a live, interactive environment being used as a research partner, which is often where systems reveal strengths and weaknesses that synthetic tests miss.",
+              "whyItMatters": "Live environments are useful when teams want to study planning, adaptation, and collaboration over time. Work like this can help translate lab progress into behavior that holds up under more realistic conditions."
+            }
+          },
+          "keywords": [
+            "research",
+            "games",
+            "deepmind",
+            "partnership",
+            "evaluation"
+          ],
+          "readTimeMinutes": 3,
+          "sourcePosts": [
+            {
+              "id": "2052147236952477923",
+              "url": "https://x.com/demishassabis/status/2052147236952477923",
+              "createdAt": "2026-05-06T22:03:22.000Z",
+              "authorUsername": "demishassabis",
+              "authorName": "Demis Hassabis"
+            }
+          ],
+          "isInitiallySaved": false
+        }
+      ]
+    }
+  ],
+  "discourse": {
+    "id": "discourse",
+    "title": "Discourse",
+    "subtitle": "Optional background from the louder parts of the conversation.",
+    "items": []
+  },
+  "completion": {
+    "title": "That's the shape of it.",
+    "subtitle": "A few concrete signals, nothing louder than that."
+  }
+}
