@@ -1,0 +1,290 @@
+{
+  "version": 1,
+  "description": "Curated X source list for the Cellardoor daily compiler. Start narrow, prefer original posts, and keep this list high-signal.",
+  "defaults": {
+    "includeReplies": false,
+    "includeReposts": false,
+    "maxPostsPerAccountPerDay": 8
+  },
+  "dailyBudget": {
+    "maxAccountsPerRun": 30,
+    "maxPostsPerRun": 180,
+    "maxSearchPostsPerRun": 40
+  },
+  "accounts": [
+    {
+      "username": "sama",
+      "displayName": "Sam Altman",
+      "group": "lab_leaders",
+      "organization": "OpenAI",
+      "priority": 1,
+      "why": "OpenAI direction, product framing, and public AI discourse."
+    },
+    {
+      "username": "gdb",
+      "displayName": "Greg Brockman",
+      "group": "lab_leaders",
+      "organization": "OpenAI",
+      "priority": 2,
+      "why": "OpenAI technical/product signals and launch context."
+    },
+    {
+      "username": "miramurati",
+      "displayName": "Mira Murati",
+      "group": "lab_leaders",
+      "organization": "Thinking Machines Lab",
+      "priority": 1,
+      "why": "Signals from a major new AI lab and former OpenAI leadership."
+    },
+    {
+      "username": "ilyasut",
+      "displayName": "Ilya Sutskever",
+      "group": "lab_leaders",
+      "organization": "SSI",
+      "priority": 1,
+      "why": "Rare but important signals from one of the field's central researchers."
+    },
+    {
+      "username": "DarioAmodei",
+      "displayName": "Dario Amodei",
+      "group": "lab_leaders",
+      "organization": "Anthropic",
+      "priority": 1,
+      "why": "Anthropic direction, frontier model strategy, and safety framing."
+    },
+    {
+      "username": "demishassabis",
+      "displayName": "Demis Hassabis",
+      "group": "lab_leaders",
+      "organization": "Google DeepMind",
+      "priority": 1,
+      "why": "DeepMind research/product direction and broader scientific context."
+    },
+    {
+      "username": "mustafasuleyman",
+      "displayName": "Mustafa Suleyman",
+      "group": "lab_leaders",
+      "organization": "Microsoft AI",
+      "priority": 2,
+      "why": "Consumer AI direction and Microsoft AI strategy."
+    },
+    {
+      "username": "ClementDelangue",
+      "displayName": "Clement Delangue",
+      "group": "platform_leaders",
+      "organization": "Hugging Face",
+      "priority": 2,
+      "why": "Open-source AI, model ecosystem, and builder community signals."
+    },
+    {
+      "username": "aidangomez",
+      "displayName": "Aidan Gomez",
+      "group": "platform_leaders",
+      "organization": "Cohere",
+      "priority": 2,
+      "why": "Enterprise AI, model deployment, and applied LLM signals."
+    },
+    {
+      "username": "alexandr_wang",
+      "displayName": "Alexandr Wang",
+      "group": "platform_leaders",
+      "organization": "Meta / Scale AI",
+      "priority": 3,
+      "why": "Industry infrastructure and applied AI strategy."
+    },
+    {
+      "username": "karpathy",
+      "displayName": "Andrej Karpathy",
+      "group": "researchers_and_teachers",
+      "organization": "Independent",
+      "priority": 1,
+      "why": "Clear technical explanations, model intuition, and practical AI education."
+    },
+    {
+      "username": "AndrewYNg",
+      "displayName": "Andrew Ng",
+      "group": "researchers_and_teachers",
+      "organization": "DeepLearning.AI",
+      "priority": 2,
+      "why": "Applied AI education, practical adoption, and industry context."
+    },
+    {
+      "username": "ylecun",
+      "displayName": "Yann LeCun",
+      "group": "researchers_and_teachers",
+      "organization": "Meta / NYU",
+      "priority": 2,
+      "why": "Research perspective, debate context, and alternative model views."
+    },
+    {
+      "username": "fchollet",
+      "displayName": "Francois Chollet",
+      "group": "researchers_and_teachers",
+      "organization": "Ndea / ARC Prize",
+      "priority": 2,
+      "why": "Reasoning, evaluation, and skeptical framing around model capability."
+    },
+    {
+      "username": "drfeifei",
+      "displayName": "Fei-Fei Li",
+      "group": "researchers_and_teachers",
+      "organization": "Stanford / World Labs",
+      "priority": 2,
+      "why": "Human-centered AI, spatial intelligence, and research leadership."
+    },
+    {
+      "username": "JeffDean",
+      "displayName": "Jeff Dean",
+      "group": "researchers_and_teachers",
+      "organization": "Google DeepMind / Google Research",
+      "priority": 2,
+      "why": "Research releases and engineering perspective from Google AI leadership."
+    },
+    {
+      "username": "goodfellow_ian",
+      "displayName": "Ian Goodfellow",
+      "group": "researchers_and_teachers",
+      "organization": "Independent",
+      "priority": 3,
+      "why": "Research perspective from a central figure in generative AI."
+    },
+    {
+      "username": "percyliang",
+      "displayName": "Percy Liang",
+      "group": "researchers_and_teachers",
+      "organization": "Stanford / Together AI",
+      "priority": 3,
+      "why": "Evaluation, transparency, and foundation model research context."
+    },
+    {
+      "username": "chelseabfinn",
+      "displayName": "Chelsea Finn",
+      "group": "researchers_and_teachers",
+      "organization": "Stanford / Physical Intelligence",
+      "priority": 3,
+      "why": "Robotics, embodied AI, and learning systems."
+    },
+    {
+      "username": "seb_ruder",
+      "displayName": "Sebastian Ruder",
+      "group": "researchers_and_teachers",
+      "organization": "Meta AI",
+      "priority": 3,
+      "why": "Language model research and practical research curation."
+    },
+    {
+      "username": "emollick",
+      "displayName": "Ethan Mollick",
+      "group": "adoption_and_discourse",
+      "organization": "Wharton",
+      "priority": 2,
+      "why": "Grounded signals about how people are actually using AI."
+    },
+    {
+      "username": "simonw",
+      "displayName": "Simon Willison",
+      "group": "builders_and_tools",
+      "organization": "Datasette",
+      "priority": 2,
+      "why": "Practical developer-facing AI tooling, evaluation, and security context."
+    },
+    {
+      "username": "chipro",
+      "displayName": "Chip Huyen",
+      "group": "builders_and_tools",
+      "organization": "Independent",
+      "priority": 2,
+      "why": "AI engineering, systems thinking, and deployment practice."
+    },
+    {
+      "username": "swyx",
+      "displayName": "Swyx",
+      "group": "builders_and_tools",
+      "organization": "Latent Space",
+      "priority": 3,
+      "why": "Builder discourse, AI engineering, and developer ecosystem signals."
+    },
+    {
+      "username": "DrJimFan",
+      "displayName": "Jim Fan",
+      "group": "builders_and_tools",
+      "organization": "NVIDIA",
+      "priority": 2,
+      "why": "Robotics, simulation, agents, and frontier AI demos."
+    },
+    {
+      "username": "OfficialLoganK",
+      "displayName": "Logan Kilpatrick",
+      "group": "builders_and_tools",
+      "organization": "Google",
+      "priority": 3,
+      "why": "Developer tooling and Gemini ecosystem signals."
+    },
+    {
+      "username": "hwchase17",
+      "displayName": "Harrison Chase",
+      "group": "builders_and_tools",
+      "organization": "LangChain",
+      "priority": 3,
+      "why": "Agent tooling, app patterns, and developer ecosystem signals."
+    },
+    {
+      "username": "jerryjliu0",
+      "displayName": "Jerry Liu",
+      "group": "builders_and_tools",
+      "organization": "LlamaIndex",
+      "priority": 3,
+      "why": "Retrieval, document AI, and applied LLM infrastructure."
+    },
+    {
+      "username": "soumithchintala",
+      "displayName": "Soumith Chintala",
+      "group": "builders_and_tools",
+      "organization": "Thinking Machines Lab / PyTorch",
+      "priority": 3,
+      "why": "AI systems, tooling, and infrastructure perspective."
+    },
+    {
+      "username": "RichardSocher",
+      "displayName": "Richard Socher",
+      "group": "builders_and_tools",
+      "organization": "You.com",
+      "priority": 3,
+      "why": "AI search, product strategy, and applied NLP perspective."
+    }
+  ],
+  "searches": [
+    {
+      "id": "frontier-model-launches",
+      "label": "Frontier model launches",
+      "query": "(released OR launch OR launches OR announcing) (model OR LLM OR reasoning OR multimodal) lang:en -is:retweet",
+      "maxResults": 10,
+      "enabled": false
+    },
+    {
+      "id": "research-papers",
+      "label": "Research papers",
+      "query": "(paper OR arxiv OR benchmark OR evaluation) (LLM OR \"language model\" OR multimodal OR reasoning) lang:en -is:retweet",
+      "maxResults": 10,
+      "enabled": false
+    }
+  ],
+  "blockedTerms": [
+    "telegram",
+    "copy my trades",
+    "airdrop",
+    "giveaway",
+    "casino",
+    "betting",
+    "nsfw",
+    "onlyfans",
+    "promo code",
+    "free trial link"
+  ],
+  "deferredAccounts": [
+    {
+      "username": "elonmusk",
+      "reason": "Relevant to xAI, but high-volume and off-topic enough that it should be handled later as a separate, heavily filtered discourse source."
+    }
+  ]
+}

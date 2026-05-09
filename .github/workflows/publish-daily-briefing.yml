@@ -1,0 +1,68 @@
+name: Publish daily briefing
+
+on:
+  workflow_dispatch:
+  schedule:
+    # GitHub Actions schedules use UTC. This is 6:05 AM Pacific during daylight time.
+    - cron: "5 13 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-daily-briefing
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch X candidates
+        run: node Compiler/fetch-candidates.mjs
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          CELLARDOOR_SOURCE_PRIORITY_MAX: "2"
+          CELLARDOOR_LOOKBACK_HOURS: "72"
+          CELLARDOOR_MAX_ACCOUNTS: "20"
+          CELLARDOOR_MAX_POSTS_PER_ACCOUNT: "8"
+          CELLARDOOR_TIME_ZONE: "America/Los_Angeles"
+
+      - name: Generate briefing
+        run: node Compiler/generate-briefing-openai.mjs
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5.4-mini' }}
+          CELLARDOOR_TIME_ZONE: "America/Los_Angeles"
+
+      - name: Publish JSON files
+        run: |
+          node - <<'NODE'
+          const fs = require("node:fs");
+          const briefing = JSON.parse(fs.readFileSync("Compiler/output/latest-briefing-ai.json", "utf8"));
+          fs.copyFileSync("Compiler/output/latest-briefing-ai.json", "latest-briefing-ai.json");
+          fs.copyFileSync(`Compiler/output/ai-briefing-${briefing.date}.json`, `ai-briefing-${briefing.date}.json`);
+          console.log(`Prepared briefing for ${briefing.date}`);
+          NODE
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "cellardoor-publisher"
+          git config user.email "actions@github.com"
+          git add latest-briefing-ai.json ai-briefing-*.json
+          if git diff --cached --quiet; then
+            echo "No briefing changes to publish."
+            exit 0
+          fi
+          DATE=$(node -e "const b=require('./latest-briefing-ai.json'); process.stdout.write(b.date)")
+          git commit -m "Publish daily briefing for ${DATE}"
+          git push
